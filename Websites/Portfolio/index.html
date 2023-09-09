@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icon">
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <ul  class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link"> About </a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"> Project </a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link"> Skills </a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"> Contact </a>
+                    </li>                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="home">
+        <div class="btn">
+            <button onclick="myFunction()">Dark mode</button>
+        </div>
+        <div class="container">
+            <div class="greet">
+                <h1>WELCOME</h1>
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="myimg">
+                <img src="profile.jpg" alt="Taha" class="pro">
+            </div>
+        <div class="about-text-box">
+            <h2> About </h2> 
+            <p>
+                 Computer Engineering Student with keen interest in Software Skills.  Help to make optimize software which proves useful and meaningful. Have Creative thinking and problem solving approach. Passionate for  converting ideas into reality. Have vision to make people's life easier. 
+            </p>
+        </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="project" class="project">
+        <div class="container">
+            <div class="project-title">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-item">
+                <div class="project-img margin-right">
+                    <img src="1.jpg" alt="First Project">
+                </div>
+                <div class="project-desc">
+                    <h2>Blog Using Flask</h2>
+                    <p>
+                        I wanted to be able to launch a blog quickly with python in the most simple way that I could without using any of the usual tools like wordpress or blogger.
+
+                    </p>
+                    <a href="https://github.com/taha-shaikhh/Flask-Blog" class="project-link" target="_blank">View Code</a>
+                </div>
+            </div>
+            <br>
+            <div class="project-item project-column-reverse">
+                <div class="project-desc margin-right">
+                    <h2>Google Cloud Skill</h2>
+                    <p>
+                        Hands-on Labs are the fastest way to gain real experience with GCP within a live Google Cloud environment.
+                    </p>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/77b87a15-fcf8-4c90-99a3-bfbc12120400" class="project-link" target="_blank">View Badges</a>
+                </div>
+                <div class="project-img ">
+                    <img src="2.jpg" alt="Second Project">
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-img margin-right">
+                    <img src="3.jpg" alt="Third Project">
+                </div>
+                <div class="project-desc">
+                    <h2>Keylogger(Python)</h2>
+                    <p>
+                        Keyloggers are a particularly insidious type of spyware that can record and steal consecutive keystrokes that the user enters on a device.
+                    </p>
+                    <a href="https://github.com/taha-shaikhh/Programming/blob/main/keylogger.py" class="project-link" target="_blank">View Code</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skill-title">
+                <h1>Skills</h1>
+            </div>
+            <div class="tier-skill">
+                <div class="content1">
+                    <i class="fa fa-laptop-code"></i>
+                    <h1>Front-End Developer</h1>
+                    <p>Develop the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</p>
+                    <br>
+                    <b>
+                        <p>Skill Set : HTML, CSS, JavaScript, Bootstrap, Reactjs, Flask</p>
+                    </b>
+                </div>
+                <div class="content2">
+                    <i class="fas fa-user-secret"></i>
+                    <h1>Ethical Hacker</h1>
+                    <p>Penetration testing and other testing methodologies that ensure the Security of an Organization's information systems.</p>
+                </div>
+                <div class="content3">
+                    <i class="far fa-file"></i>
+                    <h1>Programmer</h1>
+                    <p>Write and test code for new Programs, Update or Modify existing programs, Identify and correct coding errors, Rewrite programs for different operating systems</p>
+                    <b>
+                        <p>Languages: C, Java, Python, Bash</p>
+                        <p>Other Skills: Android Studio, Google Cloud, Microsoft Azure, NLP</p>
+                    </b>
+                </div>  
+        </div>
+    </section>
+    <hr>
+    <section id="contact" class="contact">
+        <div>
+            <h1>Get in Touch</h1>
+            <div class="container">
+            <p><a href="mailto:task8242@gmail.com"><i class="fas fa-envelope"></i> Mail</a></p>
+            <p><a href="https://www.linkedin.com/in/task8242" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="footer-para">
+            <p>Coded By Taha Shaikh </p>
+        </div>
+        <div class="footer-social-links">
+            <a href="https://www.instagram.com/tahashaikhh_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/taha-shaikhh" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/task8242" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/task8242" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
