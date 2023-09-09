@@ -1,0 +1,18 @@
+body{
+    background-image: url(static/loginPage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+.container  .btn{
+    align-items: center;
+    text-align: center;
+    margin-left: 16.5rem;
+    margin-top: 3rem;
+    width: 30%;
+}

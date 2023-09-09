@@ -1,0 +1,36 @@
+.background{ 
+     background-color: black;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  
+  @media (max-width: 576px) {
+    .HeroTitle{font-size: 20px;}
+    .HeroText{font-size: 14px;}
+    .HeroButton{font-size: 14px;}
+  }
+  .HeroTitle{
+    color: rgba(231,220,195,255);
+    
+  }
+  .lead{
+    color: rgba(231,220,195,255);
+  
+    
+  }
+  .btn {
+    color: rgba(231,220,195,255);
+  
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .popup {
+      background-color: black;
+    }
+  }
+
