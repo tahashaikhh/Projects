@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>{{params['blog_name']}}</title>
+  </head>
+  <body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  
+                </li>
+                <li class="nav-item">
+                  <a href="/logout">  <button class="btn btn-danger"> Logout</button></a>
+              </li>
+              </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+
+<div class="site-heading">
+    <h1>Admin Panel</h1>
+    <span class="subheading">Manage your posts and change them</span>
+</div>
+<div class="mt-2">
+  <a href="/edit/0">  <button class="btn btn-primary"> Add a new post</button></a>
+</div>
+<hr>
+<div>
+<h1>Upload A File</h1>
+<form action="/uploader" method="POST" enctype="multipart/form-data">
+<input type="file" name="file1">
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<hr>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sno</th>
+        <th scope="col">Title</th>
+        <th scope="col">Content</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+{% for post in posts %}
+    <tbody>
+      <tr>
+        <td>{{post.sno}}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.content}}</td>
+        <td><a href="/edit/{{post.sno}}"><button class="btn btn-primary" >Edit</button></a></td>
+        <td><a href="/delete/{{post.sno}}"><button class="btn btn-primary" >Delete</button></a></td>
+      </tr>
+    </tbody>
+{% endfor %}
+
+  </table>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <p class="text-center text-muted">&copy; {{params['company_name']}}</p>
+    </footer>
+  </div>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+-->
+</html>
