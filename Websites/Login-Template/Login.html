@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Login Form</title>
+<link rel="stylesheet" href="login_css.css">
+<script language="javascript">
+function ValidUserNamePassword(){
+var Password;
+
+Password=f1.password.value;
+
+if(Password.length < 6){
+alert("Password Length should be between 6-12")
+f1.password.value=""
+f1.password.focus()
+return false
+}
+
+else if(!Password.match(/^[0-9a-zA-Z@]+$/)){
+alert("Password must only include uppercase, lowercase and a special character")
+f1.password.value=""
+f1.password.focus()
+return false
+}
+
+}
+
+</script>
+
+</head>
+<body>
+<h1>Welcome To The Website!!!</h1>
+<div>
+
+<form name="f1" action="login.php" method="POST">
+
+<h2>Login Screen</h2>
+   Email
+<input type="email" name="email" id="email" placeholder="Enter Your Email" maxlength="30">
+<br>
+   Password 
+<input type="password" name="password" id="password" placeholder="Enter Your Password" maxlength="12">
+<input type="checkbox" checked="checked" name="remember"> Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="#" style="color:white" class="btn">Forgot password?</a>
+<button type="submit" name="login" onclick="ValidUserNamePassword()">Login</button>
+
+<br><br>
+<a href="signup.html" class="sign" >New User? Sign up</a>
+</form>
+</div>
+
+
+</body>
+</html>

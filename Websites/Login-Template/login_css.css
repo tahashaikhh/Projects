@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    color: lavender;
+    background-color: tomato;
+}
+
+h1{
+    text-align: center;
+    color: rgb(211, 214, 228);
+    font-family: Sans-serif;
+    border: 5px;
+    margin-top: 100px;
+}
+
+div{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 312px;
+    height:400px;
+    margin-top: 80px;
+    margin-left:auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    /* background-color: rgba(147, 156, 196, 0.685); */
+    background-color: #ffa090;
+    border-radius: 10px ;
+    
+}
+
+div.sarea{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 378px;
+    height:590px;
+    padding: 4px;
+    margin-top: 120px;
+    margin-left:auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    background-color: tomato;
+    border-radius: 10px ;
+}
+
+form{
+    margin-left: auto;
+    padding: 10px;
+    color: rgb(218, 222, 240);
+}
+
+h2{
+    text-align: center;
+    color: rgb(203, 208, 230);
+    font-family: verdana;
+    border: 5px;
+}
+
+.txtarea{
+    width: 375px;
+    height: 73px;
+    margin: 0px 0px;
+    box-shadow: none;
+    background: transparent;
+
+}
+
+input[type=text]{
+    width: 45%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px ;
+    padding: 13px 12px;
+    margin-left: 11px;
+    display: inline-block;
+    margin-top: 6px;
+}
+
+input[type=password],input[type=email] {
+    width: 95%;
+    padding: 14px 12px;
+    margin: 6px 0;
+    margin-left: 11px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px ;
+    /*color: white;*/
+}
+
+a.resign{
+    color:#04AA6D;
+    margin: 56px;
+    text-align: center;
+    margin-left: 82px;
+}
+
+button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px ;
+}
+
+
+button:hover {
+    opacity: 0.8;
+  }
+
+.sign{
+    background-color: #ce4343;
+    color: white;
+    padding: 11px 88px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px ;
+    font-family: verdana;
+    font-size: 12px;
+    text-decoration: none;
+}
+.sign:hover{
+    opacity: 0.7;
+
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
